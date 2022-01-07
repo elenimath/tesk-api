@@ -13,13 +13,13 @@ jobs:
         with:
           source_repo: "elenimath/tesk-api"
           source_branch: "master"
-          destination_repo: "https://ghpusher:${{ secrets.EBRAINS_GITLAB_ACCESS_TOKEN }}@gitlab.ebrains.eu/technical-coordination/workflows/tesk-api.git"
+          destination_repo: "https://ghpusher:${{ secrets.EBRAINS_GITLAB_ACCESS_TOKEN }}@gitlab.ebrains.eu/technical-coordination/private/workflows/tesk-api.git"
           destination_branch: "main"
       - name: synctags
         uses: wei/git-sync@v3
         with:
           source_repo: "elenimath/tesk-api"
           source_branch: "refs/tags/*"
-          destination_repo: "https://ghpusher:${{ secrets.EBRAINS_GITLAB_ACCESS_TOKEN }}@gitlab.ebrains.eu/technical-coordination/workflows/tesk-api.git"
+          destination_repo: "https://ghpusher:${{ secrets.EBRAINS_GITLAB_ACCESS_TOKEN }}@gitlab.ebrains.eu/technical-coordination/private/workflows/tesk-api.git"
           destination_branch: "refs/tags/*"
 
