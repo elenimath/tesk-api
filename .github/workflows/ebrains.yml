@@ -22,3 +22,4 @@ jobs:
           source_branch: "refs/tags/*"
           destination_repo: "https://ghpusher:${{ secrets.EBRAINS_GITLAB_ACCESS_TOKEN }}@gitlab.ebrains.eu/technical-coordination/workflows/tesk-api.git"
           destination_branch: "refs/tags/*"
+
